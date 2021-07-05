@@ -34,9 +34,7 @@ recommends the best movies for you!<br />
 ## [Udemy Courses](https://imaginex.fun/udemy.html)
 Want to learn from Udemy, but don't have money to spend?<br />
 Or don't want to spend money on online courses?<br />
-Use ImaginEx's Udemy Courses Explorer and get hundreds of  
-top rated Udemy courses which are on a free discount and  
-grab them before anyone can to kickstart your learning!<br />
+Use ImaginEx's Udemy Courses Explorer and get hundreds of top rated Udemy courses which are on a free discount and grab them before anyone can to kickstart your learning!<br />
 
 ### How to Explore?
  1. Open `Udemy Courses` by clicking `Take me there`.
@@ -60,8 +58,7 @@ Use ImaginEx's StatSplore and see your game statistics in a cool and beautiful w
 ## [Wayback Machine](https://imaginex.fun/wayback.html)
 Ever thought of going back in the past and revisiting your memories?<br />
 That's partially possible now! <br />
-Use ImaginEx's Wayback Machine and revisit the websites  
-with their old look!<br />
+Use ImaginEx's Wayback Machine and revisit the websites with their old look!<br />
 Explore how websites used to look like in the past and feel nostalgic. <br />
 
 ### How to Explore?
@@ -74,15 +71,11 @@ Explore how websites used to look like in the past and feel nostalgic. <br />
 
 ## [MoneyXplore](https://imaginex.fun/portfolio.html)
 Ever thought of investing money in the stock market?<br />
-But never have the time to explore and understand what a  
-stock company does?<br />
-Use ImaginEx's Portfolio Builder and let our  
-Artificial Intelligence pick the best stocks for you!<br />
-Our AI explores  
-each company and only pick those who have great future and  
-returns ahead! <br />
+But never have the time to explore and understand what a stock company does?<br />
+Use ImaginEx's MoneyXplore and let our Artificial Intelligence pick the best stocks for you!<br />
+Our AI explores each company and only pick those who have great future and returns ahead! <br />
 
-Note: <bold>The database `combined.csv` is made by me using Yahoo Finance's CSV's and is not downloaded from anywhere else</bold>
+Note: <strong>The database `combined.csv` is made by me using Yahoo Finance's CSV's and is not downloaded from anywhere else</strong>
 
 ### How to Explore?
  1. Open `MoneyXplore` by clicking `Take me there`.
