@@ -1,0 +1,192 @@
+header, .content
+{
+	background-color: rgba(13, 110, 253, 0.04) !important;
+}
+
+.scrolled
+{
+	background: #5397fc !important;
+}
+
+.content
+{
+	background: url("../images/bg4.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: 450px 450px !important;
+	background-position: 920px 30px !important;
+	background-color: rgba(13, 110, 253, 0.04) !important;
+}
+
+.content section a
+{
+	width: 250px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	border-radius: 30px !important;
+}
+
+.extra
+{
+	background-color: rgba(13, 110, 253, 0.04);
+	height: 70px;
+	width: auto;
+}
+
+.udemyOuter
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+
+.udemyOuter section
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	flex-direction: column;
+}
+
+.udemyOuter section h2
+{
+	font-size: 2.5em;
+}
+
+.udemyOuter section p
+{
+	margin-top: 10px;
+	font-weight: 400;
+}
+
+.udemyOuter section input
+{
+	border: none;
+	outline: none;
+	padding: 5px 10px 5px 10px;
+	margin-top: 30px;
+	width: 500px;
+	height: 40px;
+	border: 2px solid #0d6efd;
+	border-radius: 5px;
+}
+
+
+.cardsDiv
+{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 50px;
+}
+
+.card
+{
+	display: none;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	gap: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 20px;
+	min-height: 400px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.card.active
+{
+	display: flex;
+}
+
+.card.active:hover
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: .3s;
+}
+
+.cardTitle
+{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.cardDesc
+{
+	font-weight: 400;
+}
+
+.cardImg
+{
+	min-width: 290px;
+	min-height: 150px;
+	max-width: 290px;
+	max-height: 150px;
+	border-radius: 3px;
+	margin-top: auto;
+}
+
+.cardUrl
+{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	background: #0d6efd;
+	border-radius: 5px;
+	margin-top: auto;
+}
+
+.cardUrl:hover
+{
+	background: #0d52b8;
+	transition: .3s;
+}
+
+.pagination
+{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.pagination.active
+{
+	display: flex;
+}
+
+.pagination button
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	background: #0d6efd;
+	color: white;
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+}
+
+.pagination button:hover
+{
+	background: #0d52b8;
+	transition: .3s;
+}
+
+.pagination button:disabled
+{
+	background: #666;
+	cursor: not-allowed;
+}

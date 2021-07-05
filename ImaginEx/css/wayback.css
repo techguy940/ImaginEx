@@ -1,0 +1,129 @@
+header, .content
+{
+	background-color: rgba(13, 110, 253, 0.04) !important;
+}
+
+.scrolled
+{
+	background: #5397fc !important;
+}
+
+.content
+{
+	background: url("../images/bg8.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: 525px 500px !important;
+	background-position: 920px 30px !important;
+	background-color: rgba(13, 110, 253, 0.04) !important;
+}
+
+.content section a
+{
+	width: 300px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	border-radius: 30px !important;
+}
+
+.extra
+{
+	background-color: rgba(13, 110, 253, 0.04);
+	height: 70px;
+	width: auto;
+}
+
+.waybackOuter
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.waybackOuter section
+{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.waybackOuter section h2
+{
+	font-size: 2.5em;
+}
+
+.waybackOuter span
+{
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+.waybackInner
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+.waybackInner #waybackUrl
+{
+	min-width: 150%;
+}
+
+.waybackInner #waybackDate
+{
+	min-width: 60%;
+}
+
+.waybackInner input
+{
+	padding: 5px;
+	padding-left: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid #0d6efd;
+}
+
+.waybackInner button
+{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	min-width: 150px;
+	min-height: 40px;
+	color: white;
+	background: #0d6efd;
+	border-radius: 10px;
+}
+
+.waybackInner button:hover
+{
+	background: #0d52b8;
+	transition: .5s;
+}
+
+.waybackMain
+{
+	display: none;
+}
+
+.waybackMain.active
+{
+	margin-top: 30px;
+	width: 90%;
+	height: 900px;
+	display: block;
+}
+
+.loader
+{
+	display: none;
+	margin-top: 10px;
+}
+
+.loader.active
+{
+	display: block;
+}

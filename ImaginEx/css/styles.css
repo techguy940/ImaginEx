@@ -1,0 +1,153 @@
+.content section .projectsBtn
+{
+	background: white;
+	color: #0d52b8;
+	border: 1px solid #0d52b8;
+}
+
+.content section .projectsBtn:hover
+{
+	background: #0d52b8;
+	border-color: #0d52b8;
+	color: white;
+}
+
+.outerIntro
+{
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	background: url("../images/bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+	background-position: 100px 0;
+	background-color: #212121;
+	margin-top: 70px;
+}
+
+.intro
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-left: 900px;
+	padding: 30px;
+}
+
+.intro h2
+{
+	font-size: 2.5em;
+	color: white;
+	margin-top: 20px;
+}
+
+.intro p
+{
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+}
+
+.outerServices
+{
+	display: flex;
+	min-height: 75vh;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.bgServices
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.bgServices p
+{
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 20px;
+
+}
+
+.bgServices h2
+{
+	font-size: 2.5em;
+}
+
+.outerServicesOuter
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.services
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.services section
+{
+	margin-bottom: 30px;
+	text-align: center;
+	background: #2e82ff;
+	color: white;
+	width: 450px;
+	padding: 20px;
+	height: 200px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.services section h2
+{
+	font-size: 1.8em;
+}
+
+.services section p
+{
+	margin-bottom: 10px;
+}
+
+.services section a
+{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+	background: white;
+	text-decoration: none;
+	color: black;
+}
+
+.services section:hover
+{
+	box-shadow: 10px 10px 11px rgba(33, 33, 33, .2);
+	transition: .5s;
+	background: #0d52b8;
+}
+
+.services section a:hover
+{
+	background: #ededed;
+	transition: .3s;
+	color: #0d6efd;
+}
