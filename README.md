@@ -66,7 +66,7 @@ Explore how websites used to look like in the past and feel nostalgic. <br />
 2. On the new page, enter `Website URL` and the `Date` of which you want to see the website.
 3. Click `Submit`
 4. Your website will be loaded and will look like that of your entered date!
-	![Image](https://media.giphy.com/media/sk7xWz4OhMvo7QUXAC/giphy.gif)
+	![Image](https://media.giphy.com/media/8Bf6JNjNxeLxDu1pJs/giphy.gif)
 
 
 ## [MoneyXplore](https://imaginex.fun/portfolio.html)
