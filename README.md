@@ -82,6 +82,8 @@ Our AI explores
 each company and only pick those who have great future and  
 returns ahead! <br />
 
+Note: <bold>The database `combined.csv` is made by me using Yahoo Finance's CSV's and is not downloaded from anywhere else</bold>
+
 ### How to Explore?
  1. Open `MoneyXplore` by clicking `Take me there`.
 2. On the new page, enter your `Principal Amount` and click `Diversify` if you want your portfolio diversified!
