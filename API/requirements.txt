@@ -1,0 +1,6 @@
+Flask
+requests
+Flask-Cors
+beautifulsoup4
+pyportfolioopt
+cvxopt
