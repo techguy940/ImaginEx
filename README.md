@@ -105,6 +105,7 @@ That comes to an end to my website and its features.<br />
 
 ## How to host yourself
 1. Install the requirements by typing `pip install -r requirements.txt` inside `API` folder.
-2. Wait for the API to grab the data and start.
-3. Open `index.html`!
-4. For further hosting you can buy a domain and host the website on a VPS with the help of Nginx.
+2. Run `api.py`
+3. Wait for the API to grab the data and start.
+4. Open `index.html`!
+5. For further hosting you can buy a domain and host the website on a VPS with the help of Nginx.
