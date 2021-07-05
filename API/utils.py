@@ -34,3 +34,37 @@ def get_recommended_movies(movie_ids):
 			data['movieUrl'] = f"https://www.themoviedb.org/movie/{j['id']}"
 			recommendations.append(data)
 	return recommendations
+# this website allows scraping
+def get_courses():
+    lim = 250 # can be less sometimes
+    courses = {}
+    start = 1
+    url = "https://www.discudemy.com/language/English/"
+    while len(courses) < lim:
+        data = requests.get(url + str(start)).text
+        soup = BeautifulSoup(data, "html.parser")
+        cards = soup.find_all("section", class_="card")
+        cards = [i for i in cards if i.find("label").text == "Free"]
+        for i in cards:
+            img = i.find("div", class_="image")
+            img = img.find("amp-img")
+            src = img["src"].strip().replace("img-a", "img-c")
+            desc = i.find("div", class_="description")
+            desc = desc.text.strip()
+            anchor = i.find("a")
+            anchor_url = anchor["href"]
+            name = anchor.text.strip()
+            coupon = anchor_url.split("/")[-1]
+            coupon_url = "https://discudemy.com/go/" + coupon
+            res = requests.get(coupon_url).text
+            coupon_soup = BeautifulSoup(res, "html.parser")
+            ui_element = coupon_soup.find("div", class_="ui segment")
+            coupon_final = ui_element.find("a")["href"].strip()
+            courses[name] = {
+                "name": name,
+                "img": src,
+                "description": desc,
+                "url": coupon_final,
+            }
+        start += 1
+    return courses
