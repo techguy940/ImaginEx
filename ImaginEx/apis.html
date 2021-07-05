@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ImaginEx - APIXplore</title>
+	<link rel="stylesheet" type="text/css" href="css/apis.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js" defer></script>
+	<script type="text/javascript" src="scripts/apis.js" defer></script>
+</head>
+<body>
+	<!-- Header with navigation links -->
+	<header id="header">
+		<h1>Imagin<span class="blue">Ex</span></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#intro">About</a></li>
+			<li><a href="index.html#outerServices">Services</a></li>
+			<li><a href="#outerFooter">Contact</a></li>
+		</ul>
+	</header>
+	<!-- Main Content / Introduction of the product -->
+	<div class="content" id="content">
+		<h2 class="contentTitle">Imagin<span class="blue">Ex</span></h2>
+		<h2 class="lineTitle">APIXplore</h2>
+		<p>Wanted to get an API that does what you want?<br>But can't seem to find such API?<br> Use Imagin<span class="blue">Ex</span>'s APISplore and find lots of APIs of your need.<br>Get the APIs of your choice and needs at one place!</p>
+		<section>
+			<a href="#apisOuter" class="startedBtn">Explore APIs</a>
+		</section>
+	</div>
+	<div class="extra"></div>
+	<!-- The place with inputs and categories -->
+	<div class="apisOuter" id="apisOuter">
+		<section>
+			<h2>Explore <span class="blue">APIs</span></h2>
+		</section>
+		<form class="apisForm" id="apisForm">
+			<input type="text" id="keywordInp" placeholder="Type keywords here (Leave empty for all APIs)">
+			<select id="categoryInp">
+				<optgroup label="Categories">
+					<option value="all" selected>All</option>
+					<option value="animals">Animals</option>
+					<option value="anime">Anime</option>
+					<option value="anti-malware">Anti-Malware</option>
+					<option value="art & design">Art & Design</option>
+					<option value="books">Books</option>
+					<option value="business">Business</option>
+					<option value="calendar">Calendar</option>
+					<option value="cloud storage & file sharing">Cloud Storage & File Sharing</option>
+					<option value="continuous integration">Continuous Integration</option>
+					<option value="cryptocurrency">Cryptocurrency</option>
+					<option value="currency exchange">Currency Exchange</option>
+					<option value="data validation">Data Validation</option>
+					<option value="development">Development</option>
+					<option value="dictionaries">Dictionaries</option>
+					<option value="documents & productivity">Documents & Productivity</option>
+					<option value="environment">Environment</option>
+					<option value="events">Events</option>
+					<option value="finance">Finance</option>
+					<option value="food & drink">Food & Drink</option>
+					<option value="games & comics">Games & Comics</option>
+					<option value="geocoding">Geocoding</option>
+					<option value="government">Government</option>
+					<option value="health">Health</option>
+					<option value="jobs">Jobs</option>
+					<option value="machine learning">Machine Learning</option>
+					<option value="music">Music</option>
+					<option value="news">News</option>
+					<option value="open data">Open Data</option>
+					<option value="open source projects">Open Source Projects</option>
+					<option value="patent">Patent</option>
+					<option value="personality">Personality</option>
+					<option value="phone">Phone</option>
+					<option value="photography">Photography</option>
+					<option value="science & math">Science & Math</option>
+					<option value="security">Security</option>
+					<option value="shopping">Shopping</option>
+					<option value="social">Social</option>
+					<option value="sports & fitness">Sports & Fitness</option>
+					<option value="test data">Test Data</option>
+					<option value="text analysis">Text Analysis</option>
+					<option value="tracking">Tracking</option>
+					<option value="transportation">Transportation</option>
+					<option value="url shorteners">URL Shorteners</option>
+					<option value="vehicle">Vehicle</option>
+					<option value="video">Video</option>
+					<option value="weather">Weather</option>
+				</optgroup>
+			</select>
+		</form>
+	</div>
+	<!-- Results where every API is shown -->
+	<div class="results">
+		<div class="cards" id="cards">
+		</div>
+	</div>
+	<!-- Pagination to not clutter all cards in the same page -->
+	<div class="pagination" id="pagination">
+		<button id="prev" onclick="previous()" disabled><i class="fas fa-caret-left"></i> Previous</button>
+		<button id="next" onclick="next()">Next <i class="fas fa-caret-right"></i></button>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="outerFooter" id="outerFooter">
+			<div class="sec aboutus">
+				<h2>About Us</h2>
+				<p>Explore your imaginations with Imagin<span class="blue">Ex</span>. We provide you several resources and facilities with which you can explore your interests.</p>
+			</div>
+			<div class="sec links">
+				<h2>Our Services</h2>
+				<ul class="ulServices">
+					<li><a href="movies.html">MovieXplore</a></li>
+					<li><a href="udemy.html">Udemy Courses</a></li>
+					<li><a href="games.html">StatXplore</a></li>
+					<li><a href="wayback.html">Wayback Machine</a></li>
+					<li><a href="portfolio.html">MoneyXplore</a></li>
+					<li><a href="apis.html">APIXplore</a></li>
+				</ul>
+			</div>
+			<div class="sec troubleshoot">
+				<h2>Troubleshoot</h2>
+				<p>If you face any difficulties or bugs while using our services, make sure to report them to us by contacting us on social medias.</p>
+			</div>
+			<div class="sec contact">
+				<h2>Contact Us</h2>
+				<ul class="ulContact">
+					<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

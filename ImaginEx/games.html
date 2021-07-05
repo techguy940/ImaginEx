@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ImaginEx - StatSlpore</title>
+	<link rel="stylesheet" type="text/css" href="css/games.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js" defer></script>
+	<script type="text/javascript" src="scripts/games.js" defer></script>
+</head>
+<body>
+	<!-- Header with navigation links -->
+	<header id="header">
+		<h1>Imagin<span class="blue">Ex</span></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#intro">About</a></li>
+			<li><a href="index.html#outerServices">Services</a></li>
+			<li><a href="#outerFooter">Contact</a></li>
+		</ul>
+	</header>
+	<!-- Main Content / Introduction of the product -->
+	<div class="content" id="content">
+		<h2 class="contentTitle">Imagin<span class="blue">Ex</span></h2>
+		<h2 class="lineTitle">StatXplore</h2>
+		<p>Curious to know how many games did you win and lose yet?<br>Want to know how are you performing in FPS Games like Apex Legends?<br> Use Imagin<span class="blue">Ex</span>'s StatSplore and see your game statistics in a cool and beautiful way.<br>Know your and someone else's game statistics in just a click for 3 FPS Games!</p>
+		<section>
+			<a href="#gamesOuter" class="startedBtn">Explore Game Stats</a>
+		</section>
+	</div>
+	<div class="extra"></div>
+	<!-- The place with inputs and games -->
+	<div class="gamesOuter" id="gamesOuter">
+		<section>
+			<button onclick="activate('csgo')" class="active">CS:GO</button>
+			<button onclick="activate('apex')">Apex Legends</button>
+			<button onclick="activate('fortnite')">Fortnite</button>
+		</section>
+		<div class="gamesInner" id="gamesInner">
+			<section class="gamesTitle">
+				<h2><span class="blue" id="edit">CS:GO</span> Stats</h2>
+			</section>
+			<form class="gamesInput" id="gamesInput">
+				<input type="text" placeholder="Black_Star1337" id="gamesUsername">
+				<label for="gamesSelect" class="gamesSelectLabel">
+					<span>Platform: </span>
+					<select id="gamesSelect">
+					<option value="origin" selected>Origin</option>
+					<option value="xbl">XBOX</option>
+					<option value="psn">Playstation</option>
+				</select>
+				</label>
+				<button type="submit" id="submitBtn">Get Stats</button>
+			</form>
+		</div>
+	</div>
+	<div class="loader" id="loader">Loading...</div>
+	<!-- To show avatar of the player -->
+	<div class="avatarOuter" id="avatarOuter">
+	</div>
+	<!-- Results cards -->
+	<div class="cards" id="cards">
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="outerFooter" id="outerFooter">
+			<div class="sec aboutus">
+				<h2>About Us</h2>
+				<p>Explore your imaginations with Imagin<span class="blue">Ex</span>. We provide you several resources and facilities with which you can explore your interests.</p>
+			</div>
+			<div class="sec links">
+				<h2>Our Services</h2>
+				<ul class="ulServices">
+					<li><a href="movies.html">MovieXplore</a></li>
+					<li><a href="udemy.html">Udemy Courses</a></li>
+					<li><a href="games.html">StatXplore</a></li>
+					<li><a href="wayback.html">Wayback Machine</a></li>
+					<li><a href="portfolio.html">MoneyXplore</a></li>
+					<li><a href="apis.html">APIXplore</a></li>
+				</ul>
+			</div>
+			<div class="sec troubleshoot">
+				<h2>Troubleshoot</h2>
+				<p>If you face any difficulties or bugs while using our services, make sure to report them to us by contacting us on social medias.</p>
+			</div>
+			<div class="sec contact">
+				<h2>Contact Us</h2>
+				<ul class="ulContact">
+					<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

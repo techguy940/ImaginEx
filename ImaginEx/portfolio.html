@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ImaginEx - MoneyXplore</title>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="scripts/common.js" defer></script>
+	<script type="text/javascript" src="scripts/portfolio.js" defer></script>
+</head>
+<body>
+	<!-- Header with navigation links -->
+	<header id="header">
+		<h1>Imagin<span class="blue">Ex</span></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#intro">About</a></li>
+			<li><a href="index.html#outerServices">Services</a></li>
+			<li><a href="#outerFooter">Contact</a></li>
+		</ul>
+	</header>
+	<!-- Main Content / Introduction of the product -->
+	<div class="content" id="content">
+		<h2 class="contentTitle">Imagin<span class="blue">Ex</span></h2>
+		<h2 class="lineTitle">MoneyXplore</h2>
+		<p>Ever thought of investing money in the stock market?<br>But never have the time to explore and understand what a<br>stock company does? Use Imagin<span class="blue">Ex</span>'s Portfolio Builder and let our<br>Artificial Intelligence pick the best stocks for you. Our AI explores<br>each company and only pick those who have great future and<br>returns ahead!</p>
+		<section>
+			<a href="#portfolioOuter" class="startedBtn">Build a portfolio</a>
+		</section>
+	</div>
+	<div class="extra"></div>
+	<!-- The place with inputs -->
+	<div class="portfolioOuter" id="portfolioOuter">
+		<section>
+			<h2><span class="blue">Portfolio</span> Builder</h2>
+		</section>
+		<form class="portfolioInner">
+			<input id="portfolioVal" type="number" placeholder="50000">
+			<label>
+				<input id="portfolioDiversify" type="checkbox"><span>Diversify</span>
+			</label>
+			<button type="submit">Submit</button>
+		</form>
+		<div class="loader" id="loader">Loading... This may take few seconds</div>
+	</div>
+	<!-- Results data -->
+	<div class="results" id="results">
+		<div class="resultsTableOuter">
+			<h2>Allocations</h2>
+			<table class="resultsTable" id="resultsTable">
+				<tr>
+					<th class="bgBlue">Symbol</th>
+					<th class="bgBlue">Name</th>
+					<th class="bgBlue">No. of stocks</th>
+				</tr>
+			</table>
+		</div>
+		<div class="resultsMeta">
+			<h2>Details</h2>
+			<table class="resultsMetaTable" id="resultsMetaTable">
+				<tr>
+					<th class="bgBlue">Annual Returns (CAGR)</th>
+					<td id="cagrTd"></td>
+				</tr>
+				<tr>
+					<th class="bgBlue">Volatility (Risk)</th>
+					<td id="riskTd"></td>
+				</tr>
+				<tr>
+					<th class="bgBlue">Max Sharpe Ratio</th>
+					<td id="sharpeTd"></td>
+				</tr>
+				<tr>
+					<th class="bgBlue">Invested</th>
+					<td id="investedTd"></td>
+				</tr>
+				<tr>
+					<th class="bgBlue">Leftover</th>
+					<td id="leftoverTd"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="graphs">
+			<h2>Pie Chart</h2>
+			<canvas id="chartjs-0" class="chartjs"></canvas>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="outerFooter" id="outerFooter">
+			<div class="sec aboutus">
+				<h2>About Us</h2>
+				<p>Explore your imaginations with Imagin<span class="blue">Ex</span>. We provide you several resources and facilities with which you can explore your interests.</p>
+			</div>
+			<div class="sec links">
+				<h2>Our Services</h2>
+				<ul class="ulServices">
+					<li><a href="movies.html">MovieXplore</a></li>
+					<li><a href="udemy.html">Udemy Courses</a></li>
+					<li><a href="games.html">StatXplore</a></li>
+					<li><a href="wayback.html">Wayback Machine</a></li>
+					<li><a href="portfolio.html">MoneyXplore</a></li>
+					<li><a href="apis.html">APIXplore</a></li>
+				</ul>
+			</div>
+			<div class="sec troubleshoot">
+				<h2>Troubleshoot</h2>
+				<p>If you face any difficulties or bugs while using our services, make sure to report them to us by contacting us on social medias.</p>
+			</div>
+			<div class="sec contact">
+				<h2>Contact Us</h2>
+				<ul class="ulContact">
+					<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ImaginEx - Wayback Machine</title>
+	<link rel="stylesheet" type="text/css" href="css/wayback.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="icon" href="images/logo.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script type="text/javascript" src="scripts/common.js" defer></script>
+	<script type="text/javascript" src="scripts/wayback.js" defer></script>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<body>
+	<!-- Header with navigation links -->
+	<header id="header">
+		<h1>Imagin<span class="blue">Ex</span></h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#intro">About</a></li>
+			<li><a href="index.html#outerServices">Services</a></li>
+			<li><a href="#outerFooter">Contact</a></li>
+		</ul>
+	</header>
+	<!-- Main Content / Introduction of the product -->
+	<div class="content" id="content">
+		<h2 class="contentTitle">Imagin<span class="blue">Ex</span></h2>
+		<h2 class="lineTitle">Wayback Machine</h2>
+		<p>Ever thought of going back in the past and revisiting your memories?<br>That's partially possible now! Use Imagin<span class="blue">Ex</span>'s Wayback Machine and revisit the websites<br>with their old look. Explore how websites used to look like in the past and feel nostalgic.</p>
+		<section>
+			<a href="#waybackOuter" class="startedBtn">Go to the Wayback Machine!</a>
+		</section>
+	</div>
+	<div class="extra"></div>
+	<!-- The place with inputs -->
+	<div class="waybackOuter" id="waybackOuter">
+		<section>
+			<h2><span class="blue">Wayback</span> Machine</h2>
+		</section>
+		<form class="waybackInner">
+			<input id="waybackUrl" type="url" placeholder="https://youtube.com">
+			<input id="waybackDate" type="date" placeholder="DD-MM-YYYY">
+			<button type="submit">Submit</button>
+		</form>
+		<span>Note: Some stuff maybe blocked due to CORS</span>
+		<div class="loader" id="loader">Loading... This may take few seconds</div>
+		<!-- Resulting IFrame -->
+		<iframe id="waybackMain" class="waybackMain" src="">Loading... This may take few seconds</iframe>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="outerFooter" id="outerFooter">
+			<div class="sec aboutus">
+				<h2>About Us</h2>
+				<p>Explore your imaginations with Imagin<span class="blue">Ex</span>. We provide you several resources and facilities with which you can explore your interests.</p>
+			</div>
+			<div class="sec links">
+				<h2>Our Services</h2>
+				<ul class="ulServices">
+					<li><a href="movies.html">MovieXplore</a></li>
+					<li><a href="udemy.html">Udemy Courses</a></li>
+					<li><a href="games.html">StatXplore</a></li>
+					<li><a href="wayback.html">Wayback Machine</a></li>
+					<li><a href="portfolio.html">MoneyXplore</a></li>
+					<li><a href="apis.html">APIXplore</a></li>
+				</ul>
+			</div>
+			<div class="sec troubleshoot">
+				<h2>Troubleshoot</h2>
+				<p>If you face any difficulties or bugs while using our services, make sure to report them to us by contacting us on social medias.</p>
+			</div>
+			<div class="sec contact">
+				<h2>Contact Us</h2>
+				<ul class="ulContact">
+					<li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
